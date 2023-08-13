@@ -31,7 +31,7 @@ Config.NotificationSound = {
 }
 
 function Config.revivePlayer(player)
-    TriggerEvent('esx_ambulancejob:revive')
+    TriggerEvent('esx_ambulancejob:revive') -- change to your revive trigger or export
 end
 
 function Config.sendNotification(title, desc)
