@@ -1,7 +1,7 @@
 
 [Support](https://discord.gg/HNhCsR9cHU)
 
-[Video](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley)
+[Video Preview](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley)
 
 [Cfx Forums](https://it.wikipedia.org/wiki/Errore_404)
 
