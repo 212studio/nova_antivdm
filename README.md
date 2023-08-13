@@ -1,3 +1,7 @@
+# Nova Anti-VDM Your Vehicular Justice Solution!
+
+Sick of unfair VDM on your FiveM server? Nova Anti-VDM is here. Stop reckless vehicle hits, promote fairness, elevate gameplay. Get it now, say no to VDM, yes to better gaming.
+
 
 [Support](https://discord.gg/HNhCsR9cHU)
 
