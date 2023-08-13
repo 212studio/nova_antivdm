@@ -10,11 +10,11 @@ Sick of unfair VDM on your FiveM server? Nova Anti-VDM is here. Stop reckless ve
 [Cfx Forums](https://it.wikipedia.org/wiki/Errore_404)
 
 
-# **Dependencies**
+## **Dependencies**
 - screenshot-basic (only for logs)
 - ox_lib (only for notifications)
 
-# **Features**
+## **Features**
 - Trigger protection
 - Anti Vdm
 - Discord logs
@@ -23,7 +23,7 @@ Sick of unfair VDM on your FiveM server? Nova Anti-VDM is here. Stop reckless ve
 - Easy Config
 - Otimized (0.0ms in use)
 
-# **Installation**
+## **Installation**
 1. Download / Close the resource
 2. Insert the resource in your /resources folder
 3. Rename the resource to nova_antivdm
