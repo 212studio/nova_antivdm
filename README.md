@@ -26,7 +26,3 @@
 4. Change the config to your likings
 5. `ensure nova_antivdm` in your `server.cfg`
 6. Restart the server 
-
-
-
-test
