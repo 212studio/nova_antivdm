@@ -5,7 +5,7 @@ Sick of unfair VDM on your FiveM server? Nova Anti-VDM is here. Stop reckless ve
 
 [Support](https://discord.gg/HNhCsR9cHU)
 
-[Video Preview](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley)
+[Video Preview](https://youtu.be/VD2JJ1KqFSQ)
 
 [Cfx Forums](https://it.wikipedia.org/wiki/Errore_404)
 
