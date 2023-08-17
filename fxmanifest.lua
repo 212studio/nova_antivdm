@@ -11,8 +11,8 @@ version '1.0.3'
 --Manifest--
 --#--
 shared_scripts {
-	'@ox_lib/init.lua',
-	'config.lua',
+    '@ox_lib/init.lua',
+    'config.lua',
 }
 
 client_script "client/client.lua"

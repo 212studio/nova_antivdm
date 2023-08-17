@@ -41,14 +41,20 @@ AddEventHandler("entityDamaged", function(entity, attacker, weapon, damage)
                     local attackerServerId = GetPlayerServerId(NetworkGetPlayerIndexFromPed(attackerPed))
                     SetEntityInvincible(targetPed, true)
 
-                    TriggerServerEvent("nova_antivdm:warn", "CODICEANTITRIGGERANTIVDM121683GDSAàòèPLàDS", attackerServerId)
+                    TriggerServerEvent("nova_antivdm:warn", "CODICEANTITRIGGERANTIVDM121683GDSAàòèPLàDS",
+                        attackerServerId)
                     SetTimeout(1500, function()
                         adding = false
                     end)
 
                     if Config.CurarePlayer then
                         local currHealth = GetEntityHealth(targetPed)
+                        print("curato", currHealth, IsEntityDead(targetPed))
                         if currHealth <= 0 or IsEntityDead(targetPed) then
+                            if GetResourceState('qb-core'):find('start') then -- qb needs a wait becuase ...
+                                Wait(7500)
+                            end
+                            SetEntityHealth(targetPed, 0)
                             Config.revivePlayer(GetPlayerServerId(NetworkGetPlayerIndexFromPed(targetPed)))
                             Config.sendNotification(Config.Lang["title"], Config.Lang["ress"])
                         end
@@ -101,13 +107,13 @@ RegisterNetEvent("nova_antivdm:warn", function(target, num)
     end
 end)
 
-RegisterCommand("resetVdm", function()
-    print("fatto")
-    LocalPlayer.state.vdmCounter = 0
-end)
-RegisterCommand("vdmcounter", function()
-    print(LocalPlayer.state.vdmCounter)
-end)
+-- RegisterCommand("resetVdm", function()
+--     print("fatto")
+--     LocalPlayer.state.vdmCounter = 0
+-- end)
+-- RegisterCommand("vdmcounter", function()
+--     print(LocalPlayer.state.vdmCounter)
+-- end)
 
 
 AddStateBagChangeHandler('vdmCounter', nil, function(bagName, key, value)
@@ -121,4 +127,13 @@ AddStateBagChangeHandler('vdmCounter', nil, function(bagName, key, value)
             end
         end
     end
+end)
+
+RegisterCommand("test", function()
+    Config.revivePlayer()
+end)
+
+RegisterCommand("test2", function()
+    SetEntityHealth(PlayerPedId(), 0)
+    TriggerServerEvent("hospital:server:SetDeathStatus", true)
 end)
