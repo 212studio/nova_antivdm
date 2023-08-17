@@ -129,11 +129,3 @@ AddStateBagChangeHandler('vdmCounter', nil, function(bagName, key, value)
     end
 end)
 
-RegisterCommand("test", function()
-    Config.revivePlayer()
-end)
-
-RegisterCommand("test2", function()
-    SetEntityHealth(PlayerPedId(), 0)
-    TriggerServerEvent("hospital:server:SetDeathStatus", true)
-end)
